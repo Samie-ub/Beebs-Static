@@ -1,0 +1,152 @@
+:root {
+    --primary: #A17139;
+    --light:#D19D5D;
+    --secondary: #FFF7EA;
+    --ternary: #FFF7EA;
+    --white: #ffffff;
+    --dark: #080605;
+    --font: "Space Grotesk"
+  }
+
+  .font{
+    font-family: var(--font);
+  }
+
+  .button{
+    width: 94%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .button i{
+    background-color: #080605d8;
+    padding: 1rem;
+    margin: 0 .5rem;
+    color: var(--white);
+    border-radius: 2rem;   
+    font-size: .8rem;
+  }
+
+  .button i:hover{
+    background-color: #D19D5D;
+  }
+
+.card-width{
+  width: 30%;
+}
+
+.social-icons a i{
+font-size: 1.2rem;
+color: var(--white);
+}
+
+.video{
+  background-color: #2D2420;
+  width: 100%;
+  height: 30rem;
+}
+
+.features {
+  color: #E5D8C3; 
+  transition: .1s ease-in-out all;
+  cursor: pointer;
+  
+}
+
+.feature-icon {
+  width: 30px;
+  position: relative;
+  top: .6rem;
+  transition: filter 0.3s ease;
+}
+
+.features:hover {
+  color: var(--white);
+  filter: brightness(1.2);
+}
+
+.hidden-button {
+    display: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.features:hover .hidden-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    color: #D19D5D;
+}
+
+.features-mobile{
+  transition: .1s ease-in-out all;
+  cursor: pointer;
+  background-color: #E5D8C3;
+}
+
+.features-mobile:hover{
+  background-color: #39241A;
+  border-top: 4px solid #804E2C;
+}
+
+.features-mobile > div:hover{
+color: var(--secondary);
+}
+
+.m-icon{
+  display: none;
+}
+
+.features-mobile:hover .m-icon {
+  display: block;
+  gap: 1rem;
+
+}
+
+.tt-scrolling-text {
+	display: flex;
+	position: relative;
+	pointer-events: none;
+}
+.tt-scrolling-text-inner {
+	padding-left: 2vw;
+	font-size: calc(16px + 6vw);
+	line-height: 1;
+	font-weight: bold;
+	font-weight: 600;
+	color: #CCC;
+	white-space: nowrap;
+	animation-name: tt_scrolling_text; 
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	animation-play-state: running;
+
+}
+.tt-scrolling-text-inner:after {
+	content: attr(data-text);
+}
+
+@keyframes tt_scrolling_text {
+	0% { transform: translateX(0) }
+	100% { transform: translateX(-50%) }
+}
+
+/* Animation direction reverse. */
+.tt-scrolling-text.scr-text-reverse .tt-scrolling-text-inner {
+	animation-direction: reverse;
+}
+
+.tt-scrolling-text.scr-text-stroke .tt-scrolling-text-inner {
+	font-weight: bold;
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #CCC;
+	-webkit-text-fill-color: transparent;
+}
+
+

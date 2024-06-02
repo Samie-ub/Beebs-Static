@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.fa-chevron-down {
+  font-size: .8rem;
+  margin-left: .5rem;
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ternary);
+}
+
+/* Customize the thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+  border-radius: 2px;
+
+}
+
+/* Change thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #A17139;
+}
+
+.active{
+  border-left: 2px solid #080605;
+  font-weight: bold;
+}
