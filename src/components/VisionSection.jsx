@@ -65,7 +65,7 @@ const VisionSection = () => {
 
                         </Grid>
                         <Grid item xs={11} sm={10} md={12} lg={6}>
-                            <img src={featureImage} alt="" />
+                            <img className='mt-10' src={featureImage} alt="" />
                         </Grid>
                     </Grid>
                 </Grid>

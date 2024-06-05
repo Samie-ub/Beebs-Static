@@ -8,6 +8,11 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 
+nav{
+  transition: padding 0.3s ease-in-out;
+
+}
+
 .fa-chevron-down {
   font-size: .8rem;
   margin-left: .5rem;

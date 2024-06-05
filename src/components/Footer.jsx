@@ -148,7 +148,7 @@ const Footer = () => {
         },
     ]
     return (
-        <div className='bg-ternary pt-14 pb-1'>
+        <div className='bg-ternary pt-14 pb-10  '>
             <Grid container justifyContent={"center"}>
                 <Grid item xs={11} lg={11}>
                     <Grid container justifyContent={"space-between"}>

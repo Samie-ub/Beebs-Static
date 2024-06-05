@@ -31,7 +31,7 @@ const CompanySlider = () => {
     }, []);
     return (
         <div className='block lg:hidden'>
-            <div className="tt-scrolling-text overflow-x-hidden overflow-y-hidden" data-scroll-speed="15">
+            <div className="tt-scrolling-text overflow-x-hidden overflow-y-hidden" data-scroll-speed="20">
                 <div className="tt-scrolling-text-inner flex items-center mt-3 gap-10" data-text="">
                     {
                         comapnyLogo.map((e) => {

@@ -1,8 +1,24 @@
+import React, { useState, useEffect } from 'react';
 import { Grid } from '@mui/material'
-import React from 'react'
 import { arrowIcon, brandLogo } from '../assets'
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 4;
+            setScrolled(isScrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     const navLinks = [
         {
             link: "Find Jobs"
@@ -26,7 +42,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className='py-7 bg-dark'>
+        <nav className={` bg-dark top-0 fixed w-full z-50 ${scrolled ? 'py-3' : 'py-7'}`}>
             <Grid container justifyContent={"center"}>
                 <Grid item md={11.5} lg={11.2}>
                     <Grid container justifyContent={"space-between"} alignItems={"center"} >

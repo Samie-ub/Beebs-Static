@@ -16,7 +16,7 @@ const TextSlider = () => {
     <div className='bg-video'>
     <div className=' py-6 border-b-2 border-solid border-border '>
          <div className="tt-scrolling-text overflow-x-hidden overflow-y-hidden" data-scroll-speed="20">
-            <div className="tt-scrolling-text-inner text-slider text-6xl md:text-9xl" data-text="Ready, Set, Cast - Actors, Models, Voice Artists, Screenwriter, and Crew Await Your Project!">
+            <div className="tt-scrolling-text-inner text-slider text-5xl md:text-7xl" data-text="Ready, Set, Cast - Actors, Models, Voice Artists, Screenwriter, and Crew Await Your Project!">
             Ready, Set, Cast - Actors, Models, Voice Artists, Screenwriter, and Crew Await Your Project!
             </div>
 

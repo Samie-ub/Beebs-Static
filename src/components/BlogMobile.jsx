@@ -50,7 +50,7 @@ const BlogMobile = () => {
             <div {...handlers} className='overflow-hidden flex flex-col items-center'>
                 <div className="w-11/12  flex">
                     <div className="blog-card">
-                        <img src={blogData[currentIndex].imgSrc} alt={blogData[currentIndex].title} />
+                        <img className='w-full' src={blogData[currentIndex].imgSrc} alt={blogData[currentIndex].title} />
                         <div className='flex justify-between items-center py-5'>
                             <p className='font-extrabold text-medium'>{blogData[currentIndex].title}</p>
                             <span className='w-2/5 border border-dark px-4 py-1 rounded-full text-sm text-center'>{blogData[currentIndex].readTime}</span>

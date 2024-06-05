@@ -31,7 +31,7 @@ const MobileNav = () => {
         },
     ]
   return (
-    <nav className="bg-dark text-white p-4 flex justify-between items-center relative">
+    <nav className="bg-dark text-white p-4 flex justify-between items-center fixed w-full z-50">
     <div>
       <img src={brandMobileLogo} alt="" />
     </div>

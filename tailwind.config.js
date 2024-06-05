@@ -25,6 +25,8 @@ export default {
       fontSize: {
         'xs': '16px',
         'heading': '85px',
+        'slider-image': '35%',
+        'tribe-image': '30%',
       },
 
     },

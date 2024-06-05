@@ -52,9 +52,9 @@ const TribeMobile = () => {
   return (
     <div className='block md:hidden pb-10'>
             <div {...handlers} className='overflow-hidden flex flex-col items-center'>
-                <div className="w-11/12  flex">
-                    <div className="blog-card">
-                        <img src={modalData[currentIndex].imgSrc} alt={modalData[currentIndex].title} />
+                <div className="w-11/12">
+                    <div className="blog-card w-full">
+                        <img className='w-full' src={modalData[currentIndex].imgSrc} alt={modalData[currentIndex].title} />
                        
                             <h2 className='font-bold text-3xl mt-3'>{modalData[currentIndex].title}</h2>
                             <p className='font-extrabold text-medium'>{modalData[currentIndex].description}</p>
@@ -62,6 +62,7 @@ const TribeMobile = () => {
                         <p>{modalData[currentIndex].para}</p>
                     </div>  
                 </div>
+
                 <div className='flex justify-center mt-8 '>
                     <div className="dot flex items-center gap-2">
                         {modalData.map((_, index) => (

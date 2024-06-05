@@ -29,9 +29,9 @@ const HeroMobile = () => {
     <div>
            <div className='block md:hidden pb-10'>
             <div {...handlers} className='overflow-hidden flex flex-col items-center'>
-                <div className="w-11/12  flex">
+                <div className="w-11/12  flex justify-center">
                     <div className="blog-card">
-                        <img src={sliderData[currentIndex].imgSrc} alt={sliderData[currentIndex].title} />
+                        <img className='w-full' src={sliderData[currentIndex].imgSrc} alt={sliderData[currentIndex].title} />
                        
                            
                            

@@ -29,12 +29,12 @@ const VideoSection = () => {
 
                     </div>
                     <p className='text-center mt-5'>As seen on</p>
-                    <div className="company-container hidden w-full overflow-x-hidden lg:flex mt-6 gap-14 items-center justify-start">
+                    <div className="company-container hidden w-full overflow-x-hidden lg:flex mt-6 ml-5 gap-14 items-center justify-start">
                         {
                             comapnyLogo.map((e) => {
                                 return (
 
-                                    <img className='w-9/12' src={e.imgSrc} alt="" />
+                                    <img  src={e.imgSrc} alt="" />
                                 )
                             })
                         }
