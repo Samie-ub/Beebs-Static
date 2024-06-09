@@ -56,10 +56,10 @@ const TribeMobile = () => {
                     <div className="blog-card w-full">
                         <img className='w-full' src={modalData[currentIndex].imgSrc} alt={modalData[currentIndex].title} />
                        
-                            <h2 className='font-bold text-3xl mt-3'>{modalData[currentIndex].title}</h2>
-                            <p className='font-extrabold text-medium'>{modalData[currentIndex].description}</p>
+                            <h2 className='font-semibold text-2xl mt-3'>{modalData[currentIndex].title}</h2>
+                            <p className='font-extrabold text-base'>{modalData[currentIndex].description}</p>
                        
-                        <p>{modalData[currentIndex].para}</p>
+                        
                     </div>  
                 </div>
 

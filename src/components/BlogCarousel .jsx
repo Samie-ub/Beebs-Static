@@ -46,11 +46,11 @@ const BlogCarousel = () => {
                     <img src={hugeLeftIcon} alt="Previous" />
                 </button>
                 {blogData.slice(currentIndex, currentIndex + 2).map((e, index) => (
-                    <div key={index} className="blog-card w-6/12">
-                        <img src={e.imgSrc} alt={e.title} />
+                    <div key={index} className="blog-card w-5/12">
+                        <img className='w-full' src={e.imgSrc} alt={e.title} />
                         <div className='flex justify-between items-center py-5'>
                             <p className='font-bold lg:text-2xl md:text-base'>{e.title}</p>
-                            <span className='border border-dark md:text-base md:px-2 lg:px-4 py-1 rounded-full'>{e.readTime}</span>
+                            <span className='border border-dark md:text-sm md:px-2 lg:px-4 py-1 rounded-full'>{e.readTime}</span>
                         </div>
                         <p>{e.para}</p>
                     </div>

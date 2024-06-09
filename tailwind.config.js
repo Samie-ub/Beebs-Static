@@ -20,14 +20,18 @@ export default {
         span:"#C58B4A",
         feature:"#54433C",
         slider:"#2D2420",
-        border:"#080605"
+        border:"#080605",
+        footer:"#FFF4E3"
+        
       },
       fontSize: {
         'xs': '16px',
         'heading': '85px',
         'slider-image': '35%',
-        'tribe-image': '30%',
       },
+      width:{
+        'tribe-image':'28%'
+      }
 
     },
   },

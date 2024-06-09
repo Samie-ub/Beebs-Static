@@ -42,7 +42,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className={` bg-dark top-0 fixed w-full z-50 ${scrolled ? 'py-3' : 'py-7'}`}>
+        <nav className={`  top-0 fixed backdrop-blur-sm w-full transition-all ease-in-out z-50 ${scrolled ? 'py-3 nav-bg' : 'py-7 bg-dark'}`}>
             <Grid container justifyContent={"center"}>
                 <Grid item md={11.5} lg={11.2}>
                     <Grid container justifyContent={"space-between"} alignItems={"center"} >
@@ -64,7 +64,7 @@ const Navbar = () => {
                                 <div className="buttons flex gap-2">
 
 
-                                    <button className='text-light border-light border-2 text-base px-4 py-2 rounded-full font-bold'>Sign In</button>
+                                    <button className='text-light border-light border text-base px-4 py-2 rounded-full font-bold'>Sign In</button>
                                     <button className=' bg-light     text-base px-5 py-2 rounded-full font-medium'>Join Browndot</button>
 
                                 </div>

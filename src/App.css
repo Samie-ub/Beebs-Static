@@ -8,9 +8,14 @@
     --font: "Space Grotesk"
   }
 
+.nav-bg{
+  background-color: #080605e3;
+}
+
   .font{
     font-family: var(--font);
   }
+
 
   .button{
     width: 94%;

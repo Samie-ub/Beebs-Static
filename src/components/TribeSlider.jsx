@@ -5,34 +5,41 @@ const TribeSlider = () => {
   const modalData = [
     {
       imgSrc: modalThree,
+      link:"#",
       title: "Actor/Actress",
       description: "Land your big break! Book your next audition and get cast for your perfect role"
     },
     {
       imgSrc: modalTwo,
-      title: "Models",
+      link:"#",
+      title: "VoiceOver Artists",
       description: "Ready to lend your voice? Get voiceover opportunities both remote and in-studio."
     },
     {
       imgSrc: modalOne,
-      title: "Content Creators",
+      link:"#",
+      title: "Models",
       description: "Connecting you with the right industry professionals and bring your vision to life."
     },
     {
       imgSrc: modalThree,
-      title: "Actors",
+      link:"#",
+      title: "Influencers",
       description: "Audition for roles in films, TV shows, commercials, and more."
     },
     {
       imgSrc: modalTwo,
-      title: "Voiceover Artists",
+      link:"#",
+      title: "Musicians",
       description: "Lend your voice to animations, audiobooks, and commercials."
     },
     {
       imgSrc: modalOne,
-      title: "Photographers",
+      link:"#",
+      title: "Content Creators",
       description: "Capture moments for various events and industries."
     },
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,16 +61,18 @@ const TribeSlider = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden mt-14 hidden md:block">
+    <div className="relative w-full overflow-hidden mt-14 hidden md:block pl-12">
       <div
         className="modal-slider flex transition-transform duration-500 ease-in-out"
         style={{ transform: getTransformValue() }}
       >
         {modalData.map((e, index) => (
-          <div key={index} className="modal-card flex-shrink-0 w-1/3 px-2">
-            <img className='w-full' src={e.imgSrc} alt={e.title} />
-            <h2 className='font-bold text-3xl mt-3'>{e.title}</h2>
-            <p>{e.description}</p>
+          <div key={index} className="modal-card flex-shrink-0 w-tribe-image px-2">
+            <a href={e.link}>
+            <img className='w-full h-4/5' src={e.imgSrc} alt={e.title} />
+            <h1 className='font-bold text-3xl mt-3'>{e.title}</h1>
+            <p className='w-full text-base font-semibold'>{e.description}</p>
+            </a>
           </div>
         ))}
       </div>

@@ -48,8 +48,8 @@ const VisionSection = () => {
                                             <div className="features-mobile flex md:hidden items-end mb-1 p-6">
 
                                                 <div className=" text-feature">
-                                                    <h1 className='uppercase text-3xl'>{e.heading}</h1>
-                                                    <p className='pt-1'>{e.para}</p>
+                                                    <h4 className='uppercase text-xl font-semibold'>{e.heading}</h4>
+                                                    <p className='pt-1 text-base'>{e.para}</p>
                                                 </div>
 
                                                 <div className='m-icon w-24'>

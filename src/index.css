@@ -41,7 +41,7 @@ nav{
 
 hr {
   border: 0;
-  height: 1px;
+  height: .1px;
   background-color: #A17139;
 }
 
@@ -49,3 +49,4 @@ hr {
   border-left: 2px solid #080605;
   font-weight: bold;
 }
+
