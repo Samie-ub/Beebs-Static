@@ -41,7 +41,7 @@ const BlogCarousel = () => {
 
     return (
         <div className='py-10 hidden md:block'>
-            <div className='flex items-center lg:gap-10 md:gap-2'>
+            <div className='flex items-center lg:gap-10 md:gap-2 justify-center'>
                 <button className='bg-dark hover:bg-feature transition-all rounded-full p-3' onClick={handlePrevClick}>
                     <img src={hugeLeftIcon} alt="Previous" />
                 </button>
