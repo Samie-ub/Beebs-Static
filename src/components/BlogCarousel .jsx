@@ -42,11 +42,18 @@ const BlogCarousel = () => {
     return (
         <div className='py-10 hidden md:block'>
             <div className='flex items-center lg:gap-10 md:gap-2 justify-center'>
+            <div data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50">
                 <button className='bg-dark hover:bg-feature transition-all rounded-full p-3' onClick={handlePrevClick}>
                     <img src={hugeLeftIcon} alt="Previous" />
                 </button>
+                </div>
                 {blogData.slice(currentIndex, currentIndex + 2).map((e, index) => (
                     <div key={index} className="blog-card w-5/12">
+                    <div data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50">
                         <img className='w-full' src={e.imgSrc} alt={e.title} />
                         <div className='flex justify-between items-center py-5'>
                             <p className='font-bold lg:text-2xl md:text-base'>{e.title}</p>
@@ -54,10 +61,16 @@ const BlogCarousel = () => {
                         </div>
                         <p>{e.para}</p>
                     </div>
+                    </div>
                 ))}
+                <div data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50">
+
                 <button className='bg-dark rounded-full  hover:bg-feature transition-all p-3 relativess' onClick={handleNextClick}>
                     <img src={hugeRightIcon} alt="Next" />
                 </button>
+                    </div>
             </div>
         </div>
     );

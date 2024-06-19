@@ -1,25 +1,36 @@
-import { Grid } from '@mui/material'
-import React from 'react'
-import HeroSlider from './HeroSlider'
-import HeroMobile from './HeroMobile'
-import CompanySlider from './CompanySlider'
+import React, { useState } from 'react';
+import SlideOne from './SlideOne';
+import SlideTwo from './SlideTwo';
+import SlideThree from './SlideThree';
+import HeroMobile from './HeroMobile';
 
 const Hero = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentSlide((prev) => (prev === 2 ? 0 : prev + 1));
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide((prev) => (prev === 0 ? 2 : prev - 1));
+    };
+
+    const slides = [
+        <SlideOne nextSlide={nextSlide} prevSlide={prevSlide} />,
+        <SlideTwo nextSlide={nextSlide} prevSlide={prevSlide} />,
+        <SlideThree nextSlide={nextSlide} prevSlide={prevSlide} />,
+    ];
+
     return (
-        <div className='bg-primary pt-32 md:pt-52 pb-10 '>
-            <Grid container justifyContent={"center"}>
-                <Grid item xs={11} lg={11.3}>
-                    <h1 className='text-5xl lg:text-heading font-extrabold uppercase text-left'>Celebrating African Talent</h1>
-                    <p className='my-6 text-base leading md:text-lg text-left font-medium'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor the incididunt utine labore et <br /> dolore fugiat nulla lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor the incididunt <br />utine labore et dolore magna aliqua.</p>
-
-                </Grid>
-            </Grid>
-            <HeroSlider />
-            <HeroMobile/>
-            <CompanySlider/>
-
+        <div>
+            <div className="hidden md:block">
+                {slides[currentSlide]}
+            </div>
+            <div className="block md:hidden pb-8">
+                <HeroMobile currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

@@ -21,16 +21,22 @@ export default {
         feature:"#54433C",
         slider:"#2D2420",
         border:"#080605",
-        footer:"#FFF4E3"
-        
+        footer:"#FFF4E3",
+        slidetwo:"#A66539",
+
       },
       fontSize: {
         'xs': '16px',
-        'heading': '85px',
+        'heading': '5.5rem',
         'slider-image': '35%',
+        '3/3xl': '32px',
+        
       },
       width:{
         'tribe-image':'28%'
+      },
+      height:{
+        'slider-height':'25rem'
       }
 
     },

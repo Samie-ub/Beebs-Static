@@ -31,13 +31,13 @@ const MobileNav = () => {
     },
   ]
   return (
-    <nav className="bg-dark text-white p-4 flex justify-between items-center fixed w-full z-50">
+    <nav className="bg-dark text-white p-4 flex justify-between items-center fixed w-full z-20">
       <div>
-        <img className='w-14' src={brandMobileLogo} alt="" />
+        <img className='w-12' src={brandMobileLogo} alt="" />
       </div>
       <div className="text-2xl flex items-center">
         <button onClick={toggleMenu}>
-          <img className='w-8' src={menuIcon} alt="" />
+          <img className='w-6' src={menuIcon} alt="" />
         </button>
       </div>
       <div className={`absolute top-full left-0 w-full bg-dark transition-transform transform py-5 ${isMenuOpen ? 'scale-y-100' : 'scale-y-0'} origin-top`}>

@@ -3,38 +3,46 @@ import { useSwipeable } from 'react-swipeable';
 import { modalOne, modalThree, modalTwo, dotIcon } from '../assets';
 
 const TribeMobile = () => {
-    const modalData = [
-        {
-          imgSrc: modalThree,
-          title: "Actor/Actress",
-          description: "Land your big break! Book your next audition and get cast for your perfect role"
-        },
-        {
-          imgSrc: modalTwo,
-          title: "Models",
-          description: "Ready to lend your voice? Get voiceover opportunities both remote and in-studio."
-        },
-        {
-          imgSrc: modalOne,
-          title: "Content Creators",
-          description: "Connecting you with the right industry professionals and bring your vision to life."
-        },
-        {
-          imgSrc: modalThree,
-          title: "Actors",
-          description: "Audition for roles in films, TV shows, commercials, and more."
-        },
-        {
-          imgSrc: modalTwo,
-          title: "Voiceover Artists",
-          description: "Lend your voice to animations, audiobooks, and commercials."
-        },
-        {
-          imgSrc: modalOne,
-          title: "Photographers",
-          description: "Capture moments for various events and industries."
-        },
-      ];
+  const modalData = [
+    {
+      imgSrc: modalThree,
+      link:"#",
+      title: "Actor/Actress",
+      description: "Land your big break! Book your next audition and get cast for your perfect role"
+    },
+    {
+      imgSrc: modalTwo,
+      link:"#",
+      title: "VoiceOver Artists",
+      description: "It’s giving slay! - BrownDot connects you to amazing model opportunities."
+    },
+    {
+      imgSrc: modalOne,
+      link:"#",
+      title: "Content Creators",
+      description: "Your voice, your views, your content. Collaborate with agencies looking for UGC"
+    },
+    {
+      imgSrc: modalThree,
+      link:"#",
+      title: "Actor/Actress",
+      description: "Land your big break! Book your next audition and get cast for your perfect role"
+    },
+    {
+      imgSrc: modalTwo,
+      link:"#",
+      title: "VoiceOver Artists",
+      description: "It’s giving slay! - BrownDot connects you to amazing model opportunities."
+    },
+    {
+      imgSrc: modalOne,
+      link:"#",
+      title: "Content Creators",
+      description: "Your voice, your views, your content. Collaborate with agencies looking for UGC"
+    },
+  
+    
+  ];
       const [currentIndex, setCurrentIndex] = useState(0);
 
       const handleSwipeLeft = () => {
@@ -52,9 +60,9 @@ const TribeMobile = () => {
   return (
     <div className='block md:hidden pb-10'>
             <div {...handlers} className='overflow-hidden flex flex-col items-center'>
-                <div className="w-11/12">
+                <div className="w-4/5">
                     <div className="blog-card w-full">
-                        <img className='w-full' src={modalData[currentIndex].imgSrc} alt={modalData[currentIndex].title} />
+                        <img className='w-full ' src={modalData[currentIndex].imgSrc} alt={modalData[currentIndex].title} />
                        
                             <h2 className='font-semibold text-2xl mt-3'>{modalData[currentIndex].title}</h2>
                             <p className='font-extrabold text-base'>{modalData[currentIndex].description}</p>

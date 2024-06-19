@@ -25,19 +25,24 @@ const VisionSection = () => {
         <div className='bg-hr py-14'>
             <Grid container justifyContent={"center"}>
                 <Grid item xs={11} lg={11}>
+                <div  data-aos="zoom-in">
+
                     <p className='font-bold text-span text-sm md:text-base'>VISIONARIES</p>
                     <h2 className='font-bold uppercase text-4xl lg:text-7xl py-6 text-secondary'>Everything you need to cast!</h2>
                     <p className='text-video'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor the incididunt utine labore et dolore fugiat <br /> nulla lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
+                            </div>
                     <Grid container alignItems={"center"} sx={{ flexDirection: { xs: "column-reverse", md: "row" }, justifyContent: { xs: "center", md: 'space-between' } }}>
                         <Grid item lg={5} className='pt-10'>
                             {
                                 featureData.map((e) => {
                                     return (
-                                        <>
+                                        <div data-aos="fade-up"
+                                        data-aos-offset="200"
+                                        data-aos-delay="50">
                                             <div className="features hidden md:flex gap-5 items-start mb-10">
                                                 <div className="icon">
-                                                    <img className='feature-icon' src={toggleIcon} alt="" />
+                                                    <img className='feature-icon w-10' src={toggleIcon} alt="" />
                                                 </div>
                                                 <div className="content">
                                                     <h1 className='uppercase text-3xl'>{e.heading}</h1>
@@ -58,14 +63,17 @@ const VisionSection = () => {
                                                     </a>
                                                 </div>
                                             </div>
-                                        </>
+                                        </div>
                                     )
                                 })
                             }
 
                         </Grid>
                         <Grid item xs={11} sm={10} md={12} lg={6}>
+                        <div data-aos="zoom-in-left">
+
                             <img className='mt-10' src={featureImage} alt="" />
+                        </div>
                         </Grid>
                     </Grid>
                 </Grid>

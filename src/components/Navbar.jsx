@@ -42,7 +42,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className={`  top-0 fixed backdrop-blur-sm w-full transition-all ease-in-out z-50 ${scrolled ? 'py-3 nav-bg' : 'py-7 bg-dark'}`}>
+        <nav className={`  top-0 fixed backdrop-blur-sm w-full transition-all ease-in-out z-20 ${scrolled ? 'py-3 nav-bg' : 'py-7 bg-dark'}`}>
             <Grid container justifyContent={"center"}>
                 <Grid item md={11.5} lg={11.2}>
                     <Grid container justifyContent={"space-between"} alignItems={"center"} >
